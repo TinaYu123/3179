@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Vis 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+    <script src="datavis2.js"></script>
+    <title>Data Visualization 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>ndo3dno3kdm3d3s
-    
+
+<body>
+    <div class="content">
+        <h1>Education Worldwide</h1>
+        <p> &nbsp;</p>
+
+        <div class="row">
+            <div class="column left">
+                <h2>Importance of Education</h2>
+                <p>Education is the process of <b>teaching</b> and developing <b>knowledge</b>.
+                    In this present day and age, it is expected that education is a <b>fundamental resource</b> in every
+                    country.
+                    Throughout the years, most countries have been making a major progress in <b>expanding</b> the
+                    <b>accessibility</b>
+                    to education for individuals at any level.<br><br>Figure 1 is a donut chart that showcases how
+                    educated each region is
+                    based on the number of learning outcomes that the region provides. There is an association with
+                    the number of learning outcome
+                    and the economic status of each region.</p>
+            </div>
+
+            <div class="column right">
+                <br><br><br>
+                <div id="donut" class="indent"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="column left">
+                <h2>Number of Learning Outcomes</h2>
+                <div id="bubble"></div>
+            </div>
+
+            <div class="column right">
+                <br><br><br>
+                <p class="indent">Learning outcomes is an <b>important</b> aspect of education. It is a method of learning to
+                    guide the body of
+                    educators to set clear expectations of what it is needed to be understood for the purpose of the
+                    academy. Countries that
+                    are more richer tend to have better education outcomes than those countries that are less developed.
+                    <br><br>
+                    With countries slowly expanding their resources over the past few decades, the education industry is
+                    able have more
+                    accessibility to provide expected learning outcomes therefore an overall increase in numbers of
+                    learning outcomes in 2017
+                    since 1985.
+                </p>
+            </div>
+        </div>
+
+
+        <h2>Average Years of Schooling Across the Globe</h2>
+        <p>This map shows the average years of schoolings by all individuals across the globe. Across the world, <span
+            style="color:#e5b00e"><b>The
+            United States of America</b></span>
+            and <span style="color:#dc2f2f"><b>Canada</b></span> is the most educated in the world with an average of <span
+            style="color:#e5b00e"><b>13.4 years</b></span> and <span style="color:#dc2f2f"><b>13.3 years</b></span> of average
+            schooling
+            by individuals. As shown in the map, the more developed countries tend to have a greater education average
+            compared to the countries
+            that are less developed. The education system is associated with the economic performance of a country.
+        </p>
+        <div>
+            <div id="choropleth"></div>
+
+            <h2>Total Enrolment to Higher Education</h2>
+            <p>Every region in the world has seen a significant <b>increase</b> in gross student enrolment to higher education.
+                The global accessibility to education has improved over the past few decades. <span
+                    style="color:#e5b00e"><b>North America</b></span> had a signifcant much more higher number of total
+                enrolment than other countries in the year 1985. In 2020, <span
+                    style="color: #0c6aa7"><b>Australia</b></span> has overtaken North America as the current region to
+                be the highest in total number of enrolment to higher education.</p>
+
+            <div class="row">
+                <div class="column left">
+                    <div id="bar"></div>
+                </div>
+
+                <div class="column right">
+                    <div id="bar2"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="column left">
+                    <h2>The Impact of Literacy</h2>
+                    <p>Literacy is refered to as the ability to <b>read</b> and <b>white</b> to enable <b>effective communication</b>. In
+                        the earlier years, countries across the entire globe had a signifcant lower literacy rate than
+                        it is today. Factors that manifested the significant rise in literacy rate over the years
+                        include the <b>higher accessibility</b> and <b>affordability</b> of education in each region along with the
+                        continuing expansion and development within each country.
+                        <b>Building literacy</b> in the early stages of life can help students grasp the effective means to communicate with a clear
+                        manner in modern society.</p>
+                </div>
+
+                <div class="column right">
+                    <br><br><br><br>
+                    <div id="line" class="indent"></div>
+                </div>
+            </div>
+
+
+            <p style="text-align: center;">Education enables individuals to develop <b>critical thinking</b>, directing ways of
+                using logic to make decsions and create effective conversational skills when interacting with other
+                people. Thus, enchancing <b>stability in life</b>.</p>
+        </div>
+        <div class="content">
+            <h4>This visualization was created by Tina Yu 30569672 FIT3179.
+                <br>Source: <a
+                    href="url">https://ourworldindata.org/global-education#school-enrollment-and-attendance</a>
+            </h4>
+        </div>
+    </div>
 </body>
+
 </html>
