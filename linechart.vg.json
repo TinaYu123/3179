@@ -1,0 +1,39 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title": "Figure 6: Literacy Rate over the Years",
+    "data": {
+        "url": "https://raw.githubusercontent.com/TinaYu123/3179/main/linechart/literate-and-illiterate-world-population.csv"
+    },
+    "repeat": {
+        "layer": [
+            "Literate",
+            "Illiterate"
+        ]
+    },
+    "spec": {
+        "mark": "line",
+        "encoding": {
+            "x": {
+                "field": "Year",
+                "timeUnit": "year"
+            },
+            "y": {
+                "aggregate": "mean",
+                "field": {
+                    "repeat": "layer"
+                },
+                "type": "quantitative",
+                "title": "Literate Rate"
+            },
+            "color": {
+                "datum": {
+                    "repeat": "layer"
+                },
+                "type": "nominal"
+            }
+        }
+    }
+    
+
+    
+}
