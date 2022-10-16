@@ -1,0 +1,13 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    "title":"Figure 1: How Edcuated is Each Region",
+    "description": "A simple donut chart with embedded data.",
+    "data": {
+        "url": "https://raw.githubusercontent.com/TinaYu123/3179/main/bubbleplot/learning-outcomes-1985-vs-2015.csv"
+    },
+    "mark": {"type": "arc", "innerRadius": 50},
+    "encoding": {
+      "theta": {"field": "Average", "type": "quantitative"},
+      "color": {"field": "Continent", "type": "nominal"}
+    }
+  }
