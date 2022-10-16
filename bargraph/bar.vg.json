@@ -1,0 +1,13 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+    
+    "title":"Figure 4: Gross Enrolment in 1970 by Regions",
+    "data": {"url": "https://raw.githubusercontent.com/TinaYu123/3179/main/bargraph/gross-enrollment-ratio-in-tertiary-education%20-%20then.csv"},
+    "mark": "bar",
+    "encoding": {
+      "x": {"aggregate": "sum", "field": "Enrolment", "title": "Gross Enrolment"} ,
+      "y": {"field": "Entity", "title":"Region"},
+      "color": {"field": "Entity", "legend":null}
+    }
+  }
+  
